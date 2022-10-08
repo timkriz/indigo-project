@@ -1,0 +1,141 @@
+html, body {
+    height: 100%;
+    /* overflow: hidden; */
+    width: 3500px;
+    margin: 0px;
+    overscroll-behavior-x: contain;
+    background-color: #CED2D4;
+}
+h1   {color: blue;}
+p    {color: black;}
+a    {text-decoration: none; /* no underline */  color: #071013;}
+img  {user-select: none; position: absolute;}
+img:hover {opacity: 0.9;}
+
+.body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    width: 3500px;
+}
+@font-face { font-family: nHaasD55; src:url("./assets/Neue Haas Grotesk Display Pro 55 Roman.otf");}
+@font-face { font-family: nHaasD75; src:url("./assets/Neue Haas Grotesk Display Pro 75 Bold.otf");}
+@font-face { font-family: nHaasT55; src:url("./assets/Neue Haas Grotesk Text Pro 55 Roman.otf");}
+
+.item-3 {position: absolute; left: 50vh;}
+
+.title {
+    position: absolute;
+    left: 7vw;
+    top: 8vh;
+    font-size: 30px;
+    color: #071013;
+    font-family: nHaasD75;
+}
+
+.header {
+    font-family: nHaasD55;
+    position: absolute;
+    left: 80vw;
+    top: 8vh;
+    font-size: 20px;
+    display: flex;
+    color: #071013;
+}
+
+.header > * {
+    padding: 0px 10px 0px 10px;
+}
+
+.footer {
+    font-family: nHaasD55;
+    position: absolute;
+    left: 7vw;
+    bottom: 5vh;
+    font-size: 20px;
+    color: #071013;
+}
+
+.footer2 {
+    font-family: nHaasD55;
+    position: absolute;
+    right: 50px;
+    bottom: 5vh;
+    font-size: 20px;
+    color: #071013;
+}
+
+.main-text {
+    position: absolute;
+    left: 200px;
+    top: 350px;
+    font-size: 130px;
+    color: #071013;
+    font-family: nHaasD75;
+    user-select: none;
+}
+
+.main-text-with-stroke {
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.winners {
+    position: absolute;
+    right: 100px;
+    top: 8vh;
+    font-family: nHaasD55;
+    user-select: none;
+    font-size: 20px;
+    /* 
+    font-size: 80px;
+    color: #CED2D4;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black; */
+    /* transform: rotate(-90deg); */
+
+}
+
+.overlay {
+    padding: 100px;
+    position:fixed;
+    /* top:50px;
+    left:50px; */
+    width: 100vw;
+    height: 100vh;
+    background-color:#CED2D4;
+    cursor: url('./assets/cursor-close.webp'),auto;
+}
+
+#imgPlaceholder {
+    width:30vw;
+    position:relative;
+    padding: 50px;
+}
+
+#titlePlaceholder {
+    font-size: 30px;
+    font-family: nHaasD75;  
+}
+#descPlaceholder {
+    text-align: justify;
+    font-size: 16px;
+    font-family: nHaasT55;
+    width:60%;
+}
+.close {
+    padding: 30px;
+    cursor: pointer;
+    font-size: 45px;
+    font-weight: 600;
+    display: inline-block;
+    transform: rotate(45deg);
+}
+
+#about {
+    cursor: pointer;
+}
